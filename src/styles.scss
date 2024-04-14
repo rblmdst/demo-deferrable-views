@@ -1,1 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
+app {
+  &-jet,
+  &-placeholder,
+  &-loading,
+  &-error {
+    display: inline-block;
+  }
+}
+.comp {
+  &-jet,
+  &-placeholder,
+  &-error,
+  &-loading {
+    border: 3px solid;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 2em;
+    width: 210px;
+    margin: 5px;
+  }
+
+  &-jet {
+    color: green;
+  }
+  &-placeholder {
+    color: silver;
+  }
+  &-error {
+    color: red;
+  }
+  &-loading {
+    color: orange;
+  }
+}
+
+.target {
+  border: 3px solid rgb(25, 72, 173);
+  font-size: 32px;
+  width: 150px;
+  border-radius: 5px;
+  color: rgb(25, 72, 173);
+  margin-top: 100px;
+}
+
+.target.mt {
+  margin-top: 480px;
+}
